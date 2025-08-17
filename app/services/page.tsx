@@ -43,13 +43,13 @@ export default function ServicesPage() {
         <h1 style={{ fontFamily: 'Avenir, Avenir Next, Arial, sans-serif', fontSize: '2rem', fontWeight: 700, marginBottom: '0.5rem' }}>Services</h1>
         <p style={{ fontFamily: 'Avenir Light, Avenir, Arial, sans-serif', fontSize: '0.96rem', marginBottom: '2.5rem' }}>The perfect package tailored for you.</p>
       </section>
-      <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3rem', background: '#fff', paddingBottom: '4rem' }}>
+      <section className="servicesSection" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3rem', background: '#fff', paddingBottom: '4rem' }}>
         {services.map((service, idx) => (
-          <div key={service.title} style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: idx % 2 === 0 ? 'flex-start' : 'flex-end', maxWidth: 1100, width: '100%', background: idx % 2 === 0 ? '#fff' : '#e7e4dd', borderRadius: 12, boxShadow: '0 2px 12px rgba(0,0,0,0.03)', margin: '0 1rem' }}>
-            <div style={{ width: 400, height: 320, position: 'relative', margin: 32 }}>
+          <div key={service.title} className="serviceCard" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: idx % 2 === 0 ? 'flex-start' : 'flex-end', maxWidth: 1100, width: '100%', background: idx % 2 === 0 ? '#fff' : '#e7e4dd', borderRadius: 12, boxShadow: '0 2px 12px rgba(0,0,0,0.03)', margin: '0 1rem' }}>
+            <div className="serviceImageWrap" style={{ width: 400, height: 320, position: 'relative', margin: 32 }}>
               <Image src={service.image} alt={service.title} fill style={{ objectFit: 'cover', borderRadius: 0 }} />
             </div>
-            <div style={{ flex: 1, minWidth: 260, padding: 32, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start' }}>
+            <div className="serviceContent" style={{ flex: 1, minWidth: 260, padding: 32, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start' }}>
               <h2 style={{ fontFamily: 'Avenir, Avenir Next, Arial, sans-serif', fontSize: '2.4rem', lineHeight: 1.1, fontWeight: 800, marginTop: 0, marginBottom: 8 }}>
                 {service.title}
               </h2>

@@ -24,19 +24,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const navItemStyle = { textDecoration: 'none', color: '#222', fontSize: '1.1rem', fontFamily: 'Avenir, Avenir Next, Arial, sans-serif' };
   return (
     <html lang="en">
       <body style={{ margin: 0, fontFamily: 'Avenir Light, Avenir, Arial, sans-serif', background: '#e7e4dd', scrollBehavior: 'smooth' }}>
         <style>{`html { scroll-behavior: smooth; }`}</style>
         {/* Top Navigation */}
-        <nav style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem 0 1rem 0', background: '#e7e4dd', position: 'sticky', top: 0, zIndex: 10 }}>
-          <ul style={{ display: 'flex', gap: '2.5rem', listStyle: 'none', margin: 0, padding: 0, fontSize: '1.1rem', letterSpacing: '0.1em' }}>
-            <li><Link href="/" style={{ ...navItemStyle, fontWeight: 600 }}>HOME</Link></li>
-            <li><a href="/#timeline" style={navItemStyle}>WEDDING STORIES</a></li>
-            <li><a href="/#about" style={navItemStyle}>ABOUT</a></li>
-            <li><a href="/#contact" style={navItemStyle}>CONTACT</a></li>
-            <li><Link href="/services" style={navItemStyle}>SERVICES</Link></li>
+        <nav className="topNav">
+          <ul className="topNavList">
+            <li><Link href="/" className="navLink home">HOME</Link></li>
+            <li><a href="/#timeline" className="navLink">WEDDING STORIES</a></li>
+            <li><a href="/#about" className="navLink">ABOUT</a></li>
+            <li><a href="/#contact" className="navLink">CONTACT</a></li>
+            <li><Link href="/services" className="navLink">SERVICES</Link></li>
           </ul>
         </nav>
         {/* Side Navigation Dots (Client Component) */}

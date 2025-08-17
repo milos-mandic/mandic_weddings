@@ -42,7 +42,7 @@ export default function SideDotNav() {
   if (!isHome) return null;
 
   return (
-    <div style={{ position: 'fixed', left: 32, top: '40%', zIndex: 20, display: 'flex', flexDirection: 'column', gap: 18 }}>
+    <div className="sideDots" style={{ position: 'fixed', left: 32, top: '40%', zIndex: 20, display: 'flex', flexDirection: 'column', gap: 18 }}>
       <Link href="/#hero" style={dotStyle('hero')}></Link>
       <Link href="/#timeline" style={dotStyle('timeline')}></Link>
       <Link href="/#about" style={dotStyle('about')}></Link>

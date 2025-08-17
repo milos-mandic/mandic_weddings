@@ -40,3 +40,145 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Desktop-first nav styles (unchanged visuals on desktop) */
+.topNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+  background: #e7e4dd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.topNavList {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+.navLink {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.1rem;
+  font-family: Avenir, "Avenir Next", Arial, sans-serif;
+}
+.navLink.home {
+  font-weight: 600;
+}
+
+/* Hide side dots on small screens so content has space */
+@media (max-width: 768px) {
+  .sideDots {
+    display: none !important;
+  }
+}
+
+/* Timeline responsive */
+@media (max-width: 900px) {
+  .timelineSection {
+    padding: 2.5rem 0;
+  }
+  .timelineContainer {
+    margin: 2rem auto 0 auto;
+    padding: 0 1rem;
+    min-height: auto;
+  }
+  .timelineLine {
+    left: 12px;
+    transform: none;
+    width: 2px;
+  }
+  .timelineList {
+    gap: 3rem !important;
+  }
+  .timelineItem {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    min-height: auto !important;
+    gap: 0.75rem;
+  }
+  .timelineNameRow {
+    order: 2;
+    justify-content: flex-start !important;
+    padding: 0 0 0 32px !important;
+  }
+  .timelineHLine {
+    display: none;
+  }
+  .timelineName {
+    margin: 0 0 0 12px !important;
+    font-size: 1.1rem !important;
+  }
+  .timelineVideoWrap {
+    order: 1;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+  .timelineVideoBox {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+  }
+  .timelineIframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+/* About section responsive image */
+@media (max-width: 768px) {
+  .aboutContent {
+    padding: 0 1rem;
+  }
+  .aboutImage {
+    width: 100% !important;
+    max-width: 480px;
+    height: auto !important;
+    aspect-ratio: 2 / 3;
+  }
+}
+
+/* Services responsive */
+@media (max-width: 900px) {
+  .servicesSection {
+    gap: 1.5rem !important;
+  }
+  .serviceCard {
+    flex-direction: column !important;
+    align-items: center !important;
+    margin: 0 0.75rem !important;
+  }
+  .serviceImageWrap {
+    width: calc(100% - 64px) !important;
+    height: auto !important;
+    aspect-ratio: 5 / 4;
+    margin: 24px !important;
+  }
+  .serviceContent {
+    padding: 24px !important;
+  }
+}
+
+/* Mobile nav adjustments */
+@media (max-width: 680px) {
+  .topNav {
+    padding: 1rem 0 0.5rem 0;
+  }
+  .topNavList {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0.5rem;
+  }
+  .navLink {
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+  }
+}
