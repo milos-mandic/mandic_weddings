@@ -186,7 +186,8 @@ a {
     letter-spacing: 0.08em;
   }
   .heroSection {
-    min-height: calc(100svh - 80px);
+    /* Ensure hero is truly centered within the visible viewport minus sticky nav */
+    min-height: calc(100dvh - 72px) !important;
     display: flex;
     align-items: center;
     justify-content: center;
