@@ -95,7 +95,7 @@ export default function Home() {
       <section id="contact" style={{ background: '#fff', padding: '4rem 0', textAlign: 'center' }}>
         <h2 style={{ fontFamily: 'Arial, sans-serif', fontSize: '2rem', fontWeight: 700, marginBottom: '1rem' }}>Contact</h2>
         <p style={{ fontFamily: 'Avenir Light, Avenir, sans-serif', lineHeight: 1.6 }}>I'd love to hear from you. Reach out to me for inquiries, bookings or questions.</p>
-        <p style={{ fontFamily: 'Avenir Light, Avenir, sans-serif', lineHeight: 1.6 }}>Email: <a href="mailto:info@mandicweddings.com">info@mandicweddings.com</a></p>
+        <p style={{ fontFamily: 'Avenir Light, Avenir, sans-serif', lineHeight: 1.6 }}>Email: <a href="mailto:mandicweddings@mail.com">mandicweddings@mail.com</a></p>
       </section>
     </main>
   );
