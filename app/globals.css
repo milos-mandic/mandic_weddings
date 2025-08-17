@@ -106,13 +106,13 @@ a {
   .timelineNameRow {
     order: 2;
     justify-content: flex-start !important;
-    padding: 0 0 0 32px !important;
+    padding: 0 !important;
   }
   .timelineHLine {
     display: none;
   }
   .timelineName {
-    margin: 0 0 0 12px !important;
+    margin: 0 !important;
     font-size: 1.1rem !important;
   }
   .timelineVideoWrap {
@@ -142,6 +142,10 @@ a {
     max-width: 480px;
     height: auto !important;
     aspect-ratio: 2 / 3;
+  }
+  #contact {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -180,6 +184,12 @@ a {
   .navLink {
     font-size: 0.95rem;
     letter-spacing: 0.08em;
+  }
+  .heroSection {
+    min-height: calc(100svh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
