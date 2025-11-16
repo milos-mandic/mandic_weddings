@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Wedding videography portfolio and services by Mandic Weddings",
     images: [
       {
-        url: '/bio-image.jpg',
+        url: '/wedding_image.png',
         width: 1200,
         height: 630,
         alt: 'Mandic Weddings',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Mandic Weddings",
     description: "Wedding videography portfolio and services by Mandic Weddings",
-    images: ['/bio-image.jpg'],
+    images: ['/wedding_image.png'],
   },
 };
 
