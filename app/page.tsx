@@ -4,21 +4,21 @@ import styles from "./page.module.css";
 export default function Home() {
   const weddings = [
     {
+      title: 'Marana & Jelle',
+      video: 'https://www.youtube.com/embed/Rv9kX2TDyAw',
+    },
+    {
+      title: 'Bernard & Donna',
+      video: 'https://www.youtube.com/embed/hYK7rxIoHWo',
+    },
+    {
       title: 'Eline & Joost',
       video: 'https://www.youtube.com/embed/pZX9-Bor_k8',
     },
     {
       title: 'Valérie & Joost',
       video: 'https://www.youtube.com/embed/aT6ZQxnHud4',
-    },
-    {
-      title: 'Wendy & Marc',
-      video: 'https://www.youtube.com/embed/JskhRopaY9U',
-    },
-    {
-      title: 'Bernard & Donna',
-      video: 'https://www.youtube.com/embed/hYK7rxIoHWo',
-    },
+    }
   ];
 
   return (
