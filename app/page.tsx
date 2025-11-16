@@ -84,7 +84,7 @@ export default function Home() {
       <section id="about" style={{ background: '#fff', padding: '4rem 0', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <h2 style={{ fontFamily: 'Arial, sans-serif', fontSize: '2rem', fontWeight: 700, marginBottom: '2rem' }}>About</h2>
         <div className="aboutContent" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center' }}>
-          <img className="aboutImage" src="/bio-image.jpg" alt="About" style={{ margin: '1rem', width: '300px', height: '450px', objectFit: 'cover' }} />
+          <img className="aboutImage" src="/sophie-image.jpg" alt="About" style={{ margin: '1rem', width: '300px', height: '450px', objectFit: 'cover' }} />
           <div style={{ maxWidth: 500, margin: '1rem' }}>
             <p style={{ fontFamily: 'Avenir Light, Avenir, sans-serif', lineHeight: 1.6 }}>At Mandić Weddings, I create timeless wedding videos that capture all the love, laughter, and real moments that make your day truly yours. It's not just about the planned events. It's the small, in-between moments: a nervous smile before the ceremony, a tight hug with a parent, the way you look at each other when no one else is watching.</p>
             <p style={{ fontFamily: 'Avenir Light, Avenir, sans-serif', lineHeight: 1.6, marginTop: '1rem' }}>My approach emphasizes capturing your day as it naturally unfolds, then seamlessly editing the most meaningful moments into a cinematic highlight film. I prioritize authenticity and honesty so that your story is told just as it truly happened.</p>
