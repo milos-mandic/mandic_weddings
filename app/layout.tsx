@@ -17,6 +17,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Mandic Weddings",
   description: "Wedding videography portfolio and services by Mandic Weddings",
+  openGraph: {
+    title: "Mandic Weddings",
+    description: "Wedding videography portfolio and services by Mandic Weddings",
+    images: [
+      {
+        url: '/bio-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Mandic Weddings',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Mandic Weddings",
+    description: "Wedding videography portfolio and services by Mandic Weddings",
+    images: ['/bio-image.jpg'],
+  },
 };
 
 export default function RootLayout({
